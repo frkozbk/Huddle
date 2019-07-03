@@ -295,3 +295,14 @@ button:focus {
     text-align: center;
   }
 }
+@media screen and (max-width: 370px) {
+  #header-container {
+    justify-content: baseline;
+  }
+  #header-brand {
+    transform: scale(0.6) translateX(-30px);
+  }
+  #header-container button {
+    padding: 7px 11px;
+  }
+}
