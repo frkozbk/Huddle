@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with coded decorative elements
+    </title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://kit.fontawesome.com/95f183c778.js"></script>
+  </head>
+
+  <body>
+    <!------------------------HEADER----------------------------->
+    <header id="header">
+      <div id="header-container">
+        <img id="header-brand" src="./images/logo.svg" />
+        <button id="header-button">Try It free</button>
+      </div>
+    </header>
+    <!------------------------SVG WRAPPER----------------------------->
+    <div class="svg-wrapper">
+      <svg
+        width="100vw"
+        height="100vh"
+        viewBox="0 0 100vw 100vh"
+        class="svg-corner"
+      >
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:hsl(322, 100%, 66%);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:hsl(265, 100%, 66%);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect
+          fill="url(#gradient)"
+          x="0"
+          y="0"
+          width="100vw"
+          height="100vh"
+          rx="50"
+          ry="50"
+        />
+      </svg>
+      <svg width="100vw" height="100vh" class="svg-intro">
+        <rect x="0" y="0" width="100vw" height="65vh" rx="50" ry="50" />
+      </svg>
+    </div>
+    <section id="hero">
+      <div id="container">
+        <img src="./images/illustration-mockups.svg" alt="illustration" />
+        <h1 style="font-size: 20px">Build The Community Your Fans Love</h1>
+        <h2 style="font-size: 18px;font-weight: 300">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </h2>
+        <button class="get-started">Get Started For Free</button>
+      </div>
+    </section>
+    <section id="intro">
+      <div class="img-container">
+        <img src="./images/illustration-your-users.svg" alt="your-user" />
+      </div>
+
+      <div id="intro-content">
+        <h2>Flowing Conversations</h2>
+        <p>
+          You wouldn't paginate a conversation in real life, so why do it
+          online? Our threads have just-in-time loading for a more natural flow.
+        </p>
+        <h2>Grow Together</h2>
+        <p>
+          Generate meaningful discussions with your audience and build a strong,
+          loyal community. Think of the insightful conversations you miss out on
+          with a feedback form.
+        </p>
+        <h2>Your Users</h2>
+        <p>
+          It takes no time at all to integrate Huddle with your app's
+          authentication solution. This means, once signed in to your app, your
+          users can start chatting immediately.
+        </p>
+      </div>
+    </section>
+    <section id="tryForFree">
+      <div id="tryForFree-container">
+        <h1>Try For Free</h1>
+        <p>Fully featured 30-day free trial - no credit card required</p>
+        <button class="get-started">Get Started Free</button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div id="footer-container">
+        <div id="contact">
+          <img
+            style="margin-bottom: 10px;text-align: left"
+            src="./images/logo-white.svg"
+            alt="logo-white"
+          />
+          <div id="contact-social" style="text-align: center;">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <p>
+            &copy;Copyright 2019 Huddle. All rights reserved. Challenge by
+            Frontend Mentor. Coded by Faruk.
+          </p>
+        </div>
+        <div id="contact-nav">
+          <div id="contact-nav__left">
+            <a class="nav-item" href="#">About Us</a>
+            <a class="nav-item" href="#">What We Do</a>
+            <a class="nav-item" href="#">FAQ</a>
+          </div>
+          <div id="contact-nav__right">
+            <a class="nav-item" href="#">Career</a>
+            <a class="nav-item" href="#">Blog</a>
+            <a class="nav-item" href="#">Contact Us</a>
+          </div>
+        </div>
+        <div id="subscribe">
+          <div id="subscribe-container">
+            <h1>Subscribe</h1>
+            <p>
+              To receive tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+            <input type="text" placeholder="E-mail" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

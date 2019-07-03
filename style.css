@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f9fd;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  right: 0;
+  top: 0;
+  justify-content: space-between;
+}
+
+#header-container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+#header-button {
+  padding: 7px 50px;
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+}
+
+.svg-corner {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+.svg-corner rect {
+  transform: translateX(50%) rotate(-35deg);
+}
+
+.svg-intro {
+  fill: white;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  z-index: -2;
+}
+
+.svg-intro rect {
+  transform: translateY(49%) translateX(10%) rotate(-35deg);
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  flex-direction: column;
+  font-size: 18px;
+  margin-top: 120px;
+}
+
+#container {
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+#container img {
+  width: 100%;
+}
+
+#container h1 {
+  margin-bottom: 20px;
+}
+
+#container h2 {
+  margin-bottom: 10px;
+}
+
+.get-started {
+  border: 0;
+  background-color: #ff52bf;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 3px;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 250px;
+}
+
+#intro .img-container {
+  /* max-width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  padding: 10px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+#intro-content {
+  padding: 0 10% 0 30px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#intro-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 18px;
+  color: #808d99;
+  margin-bottom: 20px;
+}
+
+#tryForFree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 170px;
+}
+
+#tryForFree-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  box-shadow: 0 10px 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+#tryForFree-container h1,
+#tryForFree-container p {
+  margin-bottom: 10px;
+}
+
+#footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #00252e;
+}
+
+#footer-container {
+  display: flex;
+  padding: 80px 50px;
+}
+
+#footer-container > div {
+  width: 33%;
+  height: 300px;
+}
+
+#contact {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#contact p {
+  padding: 0 30px;
+}
+
+#contact-social i {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+#contact-nav {
+  padding-top: 15px;
+  display: flex;
+}
+
+#contact-nav div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.nav-item {
+  color: white;
+  margin-bottom: 20px;
+}
+
+#subscribe-container {
+  width: 100%;
+  color: white;
+  padding-right: 30px;
+  text-align: center;
+}
+
+#subscribe-container p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#subscribe-container input {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 14px;
+  margin-bottom: 10px;
+}
+
+#subscribe-container button {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 14px;
+  background-color: #ff52bf;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  #intro {
+    flex-direction: column;
+  }
+  .img-container {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  #intro-content {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  #tryForFree-container {
+    width: 90%;
+    height: auto;
+    padding: 60px 30px;
+  }
+  #tryForFree div {
+    max-width: 100%;
+  }
+  #tryForFree h1 {
+    font-size: 16px;
+  }
+  #tryForFree p {
+    font-size: 14px;
+  }
+  #footer {
+    height: auto;
+  }
+  #footer-container {
+    flex-direction: column;
+    min-height: 0px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer-container div {
+    width: 100%;
+  }
+  #subscribe-container {
+    padding-right: 0;
+  }
+  #contact-nav__right,
+  #contact-left {
+    text-align: center;
+  }
+}
